@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Długość nart</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+<script>
+ function oblicz(){
+	var a = document.getElementById("a").value;
+	a = parseFloat(a);
+	
+	var b = document.getElementById("b").value;
+	b = parseFloat(b);
+
+	document.getElementById("d").innerHTML = a-b ;
+ }
+ 
+</script>
+</head>
+
+<body>
+	
+	<div id="container">
+		<div id="topbar">
+	<center>
+	Obliczanie długości nart dla dzieci (poziom począktujący)
+	</center>
+	</div>
+	<label for ="a" >wzrost dziecka (w centymetrach)<label>
+	<input type="text" dir="rtl" id="a"></br></br>
+	<label for ="b" >długość głowy (w centymetrach)<label>
+	<input type="text" dir="rtl" id="b">
+	<input type="button" value="Wykonaj" onclick="oblicz()"/>
+	<br>
+	 <div id="topbar">długość nart</div>
+	<div class = "nn" id="d">0</div> 
+ 
+
+	</div>
+	</div>
+	
+</body>
+</html>
